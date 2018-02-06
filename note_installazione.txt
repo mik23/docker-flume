@@ -1,0 +1,5 @@
+posizionarsi sotto la directory principale
+- docker pull probablyfine/flume
+- cd .\images\flume\
+- docker build .
+- docker-compose -f .\docker-compose-flume.yml up -d
