@@ -8,4 +8,4 @@
 FROM probablyfine/flume
 ADD ./config/flume.conf /opt/flume-config/flume.conf
 EXPOSE 44444
-ENTRYPOINT [ "flume-ng", "agent", "-c", "/opt/flume/conf", "-f", "/opt/flume-config/flume.conf", "-n", "docker", "-Dflume.root.logger=INFO,console" ]
+ENTRYPOINT [ "flume-ng", "agent", "-c", "/opt/flume/conf", "-f", "/opt/flume-config/flume.conf", "-n", "docker", "-Dflume.root.logger=DEBUG,console" ]
